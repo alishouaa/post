@@ -1,0 +1,312 @@
+@font-face {
+    font-family: ar-font;
+    src: url(../hors/fonts/JFFlatregular.ttf);
+}
+
+body {
+    font-family: ar-font;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.overlay {
+    background: rgba(34, 128, 129, 0.8);
+    background: linear-gradient(to right, rgba(41, 153, 155, 0.8) 0%, rgba(175, 182, 55, 0.8) 100%);
+}
+
+header.header .navbar {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    background-color: transparent;
+    position: fixed;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+header.header .navbar.color {
+    background-color: white;
+}
+
+header.header .navbar ul li {
+    display: inline;
+    color: white;
+    font-size: 16px;
+    padding: 15px 30px;
+    font-family: ar-font;
+}
+
+header.header .navbar ul li.drop {
+    display: inline;
+    color: #3097fd;
+    font-size: 16px;
+    padding: 15px 30px;
+    font-family: ar-font;
+}
+
+header.header .navbar ul li.drop:hover {
+    background-color: rgb(31, 105, 31);
+    color: white;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+header.header .navbar ul li:hover {
+    background-color: white;
+    color: #4da6ff;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+header.header .navbar .nav {
+    margin-left: 290px;
+}
+
+header.header .overlay .content {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    animation: mymove 2s;
+}
+
+header.header .overlay .content button {
+    padding: 10px 40px;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: #4da6ff;
+    border: none;
+    font-family: ar-font;
+    margin-top: 50px;
+    margin-right: 40%;
+}
+
+header.header .overlay .content button:hover {
+    background-color: #e6e600;
+    color: #555555;
+    transition: 0.5s ease-in-out;
+}
+
+header.header .overlay .content h3 {
+    text-align: center;
+    color: whitesmoke;
+    font-family: ar-font;
+    line-height: 70px;
+    font-size: 42px;
+}
+
+section.section .container h2 {
+    text-align: center;
+    margin-top: 60px;
+    font-family: ar-font;
+    font-size: 40px;
+}
+
+section.section .container .card-ali {
+    text-align: center;
+    margin-top: 50px;
+    border: solid 1px #d9d9d9;
+    padding: 20px 10px;
+    border-radius: 3px;
+    width: 365px;
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.container .block h4 {
+    color: #5cd6d6;
+    font-family: ar-font;
+    margin-top: 50px;
+    line-height: 40px;
+}
+
+.container .block hr {
+    color: #e6e6e6;
+    height: 2px;
+    width: 350px;
+    margin-top: 40px;
+}
+
+.container .block p {
+    color: gray;
+    margin-top: 10px;
+}
+
+.container .block button {
+    background-color: #3097fd;
+    border-radius: 15px;
+    padding: 10px 40px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+section.section .container h4 {
+    font-family: ar-font;
+    margin-top: 30px;
+}
+
+section.section .container p {
+    font-family: ar-font;
+    color: gray;
+    margin-top: 20px;
+    display: none;
+}
+
+.card-ali:hover .para {
+    display: inline;
+}
+
+@keyframes mymove {
+    from {
+        top: 25%;
+    }
+    to {
+        top: 35%;
+    }
+}
+
+section.action .title2 h2 {
+    text-align: center;
+    margin-top: 60px;
+    font-family: ar-font;
+    font-size: 40px;
+}
+
+section.image {
+    margin-top: 50px;
+}
+
+section.image .col-3 {
+    padding: 0;
+}
+
+section.image img {
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
+
+section.image .over:hover {
+    background-color: rgba(85, 193, 255, 0.753);
+    transition: 0.3s ease-in-out;
+}
+
+section.location {
+    margin-top: 80px;
+}
+
+section.location .title3 h2 {
+    font-family: ar-font;
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+section.location .p ul li {
+    font-family: ar-font;
+    color: #3097fd;
+    font-size: 17px;
+    padding: 10px 0;
+}
+
+section.location .social h2 {
+    font-family: ar-font;
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+}
+
+section.location .input {
+    margin-top: 50px;
+    padding-right: 150px;
+}
+
+section.location .input .form-control {
+    width: 40%;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #f2f2f2;
+}
+
+section.location .input textarea {
+    margin-top: 20px;
+    font-family: ar-font;
+}
+
+section.location .input button {
+    margin-top: 40px;
+    border-radius: 0;
+    padding: 10px 30px;
+    font-family: ar-font;
+    margin-right: 10px;
+    background-color: #4da6ff;
+    border: none;
+}
+
+footer.footer .container-fluid {
+    background-color: #1a1a1a;
+    margin-top: 50px;
+}
+
+footer.footer .container-fluid .title4 h3 {
+    color: #5cd6d6;
+    font-family: ar-font;
+    padding: 80px 150px;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+footer.footer .container-fluid .p {
+    color: grey;
+    font-family: ar-font;
+    margin-top: 40px;
+    margin-right: 150px;
+    font-size: 15px;
+}
+
+footer.footer .container-fluid ul {
+    margin-top: 0px;
+}
+
+footer.footer .container-fluid ul li {
+    font-family: ar-font;
+    color: grey;
+    margin-right: 130px;
+    padding: 20px 0;
+}
+
+footer.footer .log .list-inline {
+    margin-right: 110px;
+}
+
+footer.footer .log .list-inline .list-inline-item {
+    padding: 10px;
+    background-color: #4d4d4d;
+    margin: 20px 5px;
+}
+
+footer.footer .log .list-inline .list-inline-item a {
+    color: #999999;
+}
+
+article.footer-bar {
+    background-color: #0d0d0d;
+    padding: 20px 0;
+}
+
+article.footer-bar h4 {
+    font-family: ar-font;
+    color: grey;
+    text-align: center;
+    font-size: 17px;
+}
+
+footer.footer .container-fluid .title4 hr {
+    color: #e6e6e6;
+    height: 2px;
+    width: 50px;
+    margin-right: 150px;
+}
